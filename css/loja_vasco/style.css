@@ -1,0 +1,67 @@
+:root{
+      --black:#000;
+      --white:#fff;
+      --red:#c8102e;
+      --gray:#f3f3f3;
+      --muted:#666;
+      --max-width:1100px;
+      --radius:10px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--white) 0%, #fafafa 100%);color:var(--black);}
+    .container{max-width:var(--max-width);margin:32px auto;padding:0 18px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .crest{width:64px;height:64px;border-radius:8px;background:var(--black);display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:22px}
+    h1{margin:0;font-size:22px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+
+    .hero{margin-top:18px;background:linear-gradient(90deg,var(--black),#222);color:var(--white);border-radius:12px;padding:22px;display:flex;gap:20px;align-items:center}
+    .hero .info{flex:1}
+    .hero h2{margin:0 0 6px 0}
+    .hero p{margin:0;opacity:0.95}
+    .hero .cta{margin-top:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--white);color:var(--black)}
+    .btn-outline{background:transparent;border:2px solid var(--white);color:var(--white)}
+
+    main{margin-top:20px;display:grid;grid-template-columns:1fr 360px;gap:22px}
+
+    /* produtos */
+    .products{background:var(--white);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .card{background:var(--gray);padding:12px;border-radius:8px;display:flex;gap:10px;align-items:center}
+    .thumb{width:88px;height:88px;border-radius:8px;background:linear-gradient(135deg,#eee,#ddd);display:flex;align-items:center;justify-content:center;font-weight:700;color:#333}
+    .card h3{margin:0;font-size:16px}
+    .card p{margin:4px 0 0 0;color:var(--muted);font-size:13px}
+    .price{margin-left:auto;font-weight:800}
+    .buy{margin-top:8px;display:flex;gap:8px}
+    .small-btn{padding:8px 10px;border-radius:8px;border:0;cursor:pointer}
+
+    /* tabela de preços */
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:10px;border-bottom:1px solid #eee;text-align:left}
+    th{background:#fafafa}
+
+    /* aside */
+    aside .box{background:var(--white);padding:14px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,0.04);margin-bottom:16px}
+    .location iframe{width:100%;height:220px;border-radius:8px;border:0}
+
+    /* contato */
+    form{display:grid;gap:8px}
+    label{font-size:13px;color:var(--muted)}
+    input[type=text],input[type=email],textarea{padding:10px;border-radius:8px;border:1px solid #ddd}
+    textarea{min-height:100px;resize:vertical}
+    .row{display:flex;gap:8px}
+    .row > *{flex:1}
+
+    footer{margin-top:22px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:900px){
+      main{grid-template-columns:1fr}
+      .products-grid{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:flex-start}
+      .crest{width:56px;height:56px}
+    }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Vasco da Gama</title>
+  <link rel="stylesheet" href="/css/lojaVasco.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Loja Vasco ✠ CRVG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+
+    <!-- Produtos -->
+    <section id="produtos" class="mb-5">
+      <h2 class="mb-4 text-center">Produtos</h2>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Camisa Titular 2025 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/img/loja_vasco/gol25.webp" class="card-img-top" alt="Camisa Titular 2025 Vasco da Gama">
+            <div class="card-body text-center">
+              <h5 class="card-title">Camisa Vasco I 25/26 Jogador Kappa Masculino</h5>
+              <p class="card-text">Camisa oficial do Vasco da Gama para a temporada 2025.</p>
+              <p class="fw-bold text-success">R$ 389,90</p>
+              <a href="#" class="btn btn-dark w-100">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outro Produto -->
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="/img/loja_vasco/vas25.webp" class="card-img-top" alt="Camiseta Vasco Retrô Mania 1998 Carlos Germano">
+            <div class="card-body text-center">
+              <h5 class="card-title">Camiseta Vasco Retrô Mania 1998 Carlos Germano</h5>
+              <p class="card-text">Camiseta Juvenil Vasco 1998 Carlos Germano.</p>
+              <p class="fw-bold text-success">R$ 139,90</p>
+              <a href="#" class="btn btn-dark w-100">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tabela de preços -->
+    <section id="precos" class="mb-5">
+      <h2 class="mb-4 text-center">Tabela de Preços</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Camisa Titular 2025</td>
+              <td>R$ 299,90</td>
+            </tr>
+            <tr>
+              <td>Camisa Reserva 2025</td>
+              <td>R$ 279,90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="mb-5">
+      <h2 class="mb-4 text-center">Contato</h2>
+      <form class="p-4 shadow-sm bg-white rounded">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone">
+        </div>
+        <div class="mb-3">
+          <label for="assunto" class="form-label">Assunto</label>
+          <textarea class="form-control" id="assunto" rows="4"></textarea>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn btn-success w-50">Enviar</button>
+          <button type="reset" class="btn btn-secondary w-50">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="mb-5">
+      <h2 class="mb-4 text-center">Localização</h2>
+      <div class="ratio ratio-16x9 shadow-sm">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.218268836095!2d-43.228977325418!3d-22.889958079258095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997bff10b77bbf%3A0x6d0e8c1b7b8c5a0f!2sEst%C3%A1dio%20de%20S%C3%A3o%20Janu%C3%A1rio!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy"></iframe>\n      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Loja Oficial do Vasco da Gama</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>
