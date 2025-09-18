@@ -1,0 +1,308 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* TODO O BODY */
+body {
+    box-sizing: border-box; /* Ajuda para um elemento não sobrepor outro */
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* Estilo do navbar */ 
+li, a, button {
+    font-size: 25px;
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #000;
+}
+
+/* LOGOTIPO */
+.logotipo {
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 35px;    
+    font-weight: bold;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block; /* Coloca todos na mesma linha */
+    padding: 0 40px; /* Espaçamentos */
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #0091ff;
+    transform: scale(1.05);
+    transition: .2s;
+    text-decoration: none;
+}
+
+/* BARRA PARA MOBILE */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    header button {
+        margin: 10px auto;
+    }
+}
+
+
+/* BUTÃO */
+button {
+    padding: 15px 40px;
+    font-weight: 500;
+    background-color: #00123e;
+    border: none;
+    border-radius: 30px; /* Borda arredondada */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #05056f;
+    box-shadow: 0px 0px 8px #0091ff;
+}
+
+/* ESTILO SOBRE MIM */
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.interface-inicio {
+    display: inline-block;
+}
+
+.inicio {
+    padding: 40px 10%;
+    display: flex;
+}
+
+.text1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.404);
+    margin-left: -3px;
+    animation: MoveItem 0.7s forwards;
+}
+
+.text2 {
+    padding: -5px;
+    font-size: 40px;
+    margin: 5px 0;
+    animation: MoveItem 0.9s forwards;
+}
+
+.img-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.foto-perfil{
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESTILO SOBRE MIM */
+.sobre-titulo {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sobre-descricao {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 15px solid rgba(0, 18, 62, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sobre-paragrafo {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* ESTILO MEUS PROJETOS */
+.projetos {
+    padding: 6rem 2rem;
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-card {
+    background-color: rgba(8, 66, 174, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 10px solid rgba(0, 18, 62, 0.1);
+    overflow: hidden; /* Esconde a sobra do item */
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projetos-card:hover {
+    box-shadow: rgba(79, 70, 229, 0.2);
+    transform: translateX(-10px) scale(1.05);
+}
+
+.projetos-titulo {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.projetos-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projetos-paragrafo {
+    line-height: 1.25rem;
+}
+
+/* ESTILO ENTRE EM CONTATO */
+.contato {
+    padding: 6rem 2rem;
+}
+
+.contato-titulo {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+    border: 10px solid rgba(0, 18, 62, 0.1);
+    border-radius: 16px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.campo-form:focus {
+    border-color: rgb(42, 42, 42);
+    box-shadow: 0 0 20px rgb(52, 45, 180);
+}
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+.btn-form {
+    color: #fff;
+    background: linear-gradient(45deg, );
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.btn-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+/* ESTILO ÁUDIO */
+.audio {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f9fa; /* fundo claro */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+.audio h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.audio audio {
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+}
+
+/* ESTILO RODAPE */
+.rodape {
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
