@@ -1,3 +1,4 @@
+// Função para enviar mensagem via WhatsApp
 function enviarMsg(event){
     event.preventDefault();
     const nome = document.getElementById('nome').value;
@@ -11,3 +12,13 @@ function enviarMsg(event){
 
     window.open(url, '_blank');
 }
+
+// Função para alternar o menu de navegação em celulares
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
